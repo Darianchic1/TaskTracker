@@ -1,0 +1,90 @@
+.forma {
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0px 20px 40px 20px #D8D8D8;
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 50%;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.article {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text {
+    font-size: 16px;
+}
+
+input {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #666666;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    color: #666666;
+    font-size: 16px;
+}
+
+button {
+    width: 91%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-color: #4094F7;
+    opacity: 50%;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.active{
+    background-color: #4094F7;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.active:hover {
+    background-color: #4094F7;
+    opacity: 80%;
+}
+
+.error{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid red;
+    text-align: center;
+    padding: 5px;
+    width: 89%;
+    border-radius: 10px;
+}
+
+#to_enter{
+    text-align: center;
+    cursor: pointer;
+}
+
+#to_enter:hover{
+    text-decoration: underline;
+    color: red;
+}

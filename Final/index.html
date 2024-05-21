@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Itog</title>
+</head>
+<body>
+    <div class="menu">
+        <h1>Task traker</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="statics/two.svg" alt="">
+                <p class="name_project">My project</p>
+            </div>
+            <div class="project">
+                <img src="statics/one.svg" alt="">
+                <p class="name_project">Second project</p>
+            </div>
+        </div>
+        <div class="filter">
+            <input type="text" placeholder="User`s name" class="text_input" id="us">
+            <button class="show" id="show">Show</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="fails">
+            <div class="task_head">
+                <div class="art">
+                    <h2 class="tasks_name">Backlog</h2>
+                    <p class="number" id="orange"></p>
+                </div>
+                <img src="statics/more_horiz.svg" alt="" class="more">
+            </div>
+            <div class="tasks" id="Backlog">
+            </div>
+            <button class="add_button" id="add_backlog"><img src="statics/Vector (1).svg" alt=""></button>
+        </div>
+
+        
+        <div class="fails">
+            <div class="task_head">
+                <div class="art">
+                    <h2 class="tasks_name">In development</h2>
+                    <p class="number" id="pink"></p>
+                </div>
+                <img src="statics/more_horiz.svg" alt="" class="more">
+            </div>
+            <div class="tasks" id="In development">
+            </div>
+            <button class="add_button" id="add_development"><img src="statics/Vector (1).svg" alt=""></button>
+        </div>
+
+        <div class="fails">
+            <div class="task_head">
+                <div class="art">
+                    <h2 class="tasks_name">On approval</h2>
+                    <p class="number" id="violet"></p>
+                </div>
+                <img src="statics/more_horiz.svg" alt="" class="tasks_tochki">
+            </div>
+            <div class="tasks" id="On approval">
+            </div>
+            <button class="add_button" id="add_approval"><img src="statics/Vector (1).svg" alt=""></button>
+        </div>
+
+        <div class="fails">
+            <div class="task_head">
+                <div class="art">
+                    <h2 class="tasks_name">Done</h2>
+                    <p class="number" id="green"></p>
+                </div>
+                <img src="statics/more_horiz.svg" alt="" class="tasks_tochki">
+            </div>
+            <div class="tasks" id="Done">
+            </div>
+            <button class="add_button" id="add_done"><img src="statics/Vector (1).svg" alt=""></button>
+        </div>
+
+        <div id="form" class="form">
+            <form>
+                <h2 class="tasks_name">Enter the information</h2>
+                <input class="text_input" type="text" placeholder="User`s name" id="user">
+                <input class="text_input" type="text"  placeholder="Task" id="task">
+                <select class="text_input" name="Status" id="status_task">
+                    <option value="Done">Done</option>
+                    <option value="In development">In development</option>
+                    <option value="Backlog">Backlog</option>
+                    <option value="On approval">On approval</option>
+                </select>
+                <button type="submit" class="show" id="send_form">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="scripts/script_main.js"></script>
+</html>
